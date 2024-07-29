@@ -16,7 +16,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  display: flex;  
+  display: flex; 
+  align-items: center; 
 }
 
 h1,
@@ -38,13 +39,12 @@ ol {
   list-style: none;
 }
 .content {
-  justify-content: center;
   display: flex;
   align-items: flex-end;
   width: 1140px;
   height: 534px;
   gap: 30px;
-  margin: 133px 30px;  
+  margin: 0 auto; 
 }
 .content__list {
   height: 298px;
@@ -217,7 +217,7 @@ width: 194px;
 .more-button {
   width: 399px;
   position: fixed;  
-  top: 633px;   
+  top: 711px;   
 }
 .content__card-link_current:active {
   background-color: rgba(84, 80, 80, 1);
