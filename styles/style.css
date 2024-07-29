@@ -16,6 +16,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;  
 }
 
 h1,
@@ -35,4 +36,198 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+.content {
+  justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  width: 1140px;
+  height: 534px;
+  gap: 30px;
+  margin: 133px 30px;  
+}
+.content__list {
+  height: 298px;
+  width: 399px;
+  overflow: auto;
+  position: relative;
+  scrollbar-width: none;
+}
+.content__list-item:not(:last-child) {
+  padding-bottom: 30px;
+}
+.content__list-item:first-child {
+  padding-top: 26px;
+}
+
+.content__details {   
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 21px;
+}
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.content__video-card-thumbnail {
+  height: 103px;
+  width: 194px;
+}
+.result {
+  width: 711px;  
+}
+.result__video {
+  width: 100%;
+}
+.result__video-container {
+  padding-bottom: 16px;
+  position: relative;
+}
+.content__video-card-description-container {
+  object-fit: cover;
+  object-position: center; 
+}
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 70.5px;
+  color: #fff;
+}
+.content__accent {
+  color: rgba(84, 80, 80, 1);
+}
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin: 2px;
+}
+.content__video-card-title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.content__video-card-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
+}
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;  
+}
+.search-form__fieldset {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 21.6px;  
+}
+.search-form__textfield {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 16.2px;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  appearance: none;
+  border: 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  width: 225px;  
+}
+.search-form__label {
+  display: flex;
+  align-content: center;
+  width: fit-content;
+  gap: 5px; 
+}
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+.search-form__label:has(.search-form__checkbox):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.search-form__pseudo-checkbox {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 19px;
+  width: 19px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: '';
+  background-color: #fff;
+  height: 15px;
+  width: 15px;
+}
+.button {
+  cursor: pointer; 
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-align: center;
+  height: 34px;
+  appearance: none;
+}
+.button:active {
+  background-color: rgba(84, 80, 80, 1);
+}
+.button:hover {
+  text-decoration: underline;
+}
+.button:focus-visible {
+  outline: 1px solid #fff;
+}
+.button:focus {
+  outline: none;
+}
+.search-form__submit-button {
+width: 194px;
+}
+.more-button {
+  width: 399px;
+  position: fixed;  
+  top: 633px;   
+}
+.content__card-link_current:active {
+  background-color: rgba(84, 80, 80, 1);
+}
+.content__card-link_current:hover {
+  text-decoration: underline;
+}
+.content__card-link_current:focus-visible {
+  outline: 1px solid #fff;
+}
+.content__card-link_current:focus {
+outline: none;
 }
